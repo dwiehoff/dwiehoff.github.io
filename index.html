@@ -12,6 +12,9 @@
 	<body>
 		<h1>Hello world!</h1>
 		<p>
+			Ghanaian Time (Randy): <span id="tGhana"> ... </span>
+		</p>
+		<p>
 			German Time (Daniel): <span id="tGermany"> ... </span>
 		</p>
 
@@ -27,6 +30,8 @@
 
 			var german_time = displayTime('+2')
 			$('#tGermany').html(german_time);
+			var ghana_time = displayTime('+0')
+			$('#tGhana').html(ghana_time);
 		</script>
 	</body>
 </html>
