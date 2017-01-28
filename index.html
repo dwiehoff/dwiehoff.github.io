@@ -11,6 +11,22 @@
 	</head>
 	<body>
 		<h1>Hello world!</h1>
-		<p>I'm hosted with GitHub Pages.</p>
+		<p>
+			German Time (Daniel): <span id="tGermany"> ... </span>
+		</p>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+		function displayTime(offset) {
+			var aDate = new Date();
+			var utc = aDate.getTime() + (aDate.getTimezoneOffset() * 60000);
+			var newdate = new Date(utc + (3600000*offset));
+			return newdate.toLocaleString();
+		}
+
+
+			var german_time = displayTime('+2')
+			$('#tGermany').html(german_time);
+		</script>
 	</body>
 </html>
