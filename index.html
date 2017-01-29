@@ -18,6 +18,8 @@
 		<dl>
 			<dt>Ghanaian Time (Randy)</dt>
 			<dd id="tGhana"> ... </dd>
+			<dt>German Time (Sam)</dt>
+			<dd id="tPhilippines"> ... </dd>
 			<dt>German Time (Daniel)</dt>
 			<dd id="tGermany"> ... </dd>
 		</dl>
@@ -32,10 +34,12 @@
 		}
 
 
-			var german_time = displayTime('+1')
+			var german_time = displayTime('+1');
 			$('#tGermany').html(german_time);
-			var ghana_time = displayTime('+0')
+			var ghana_time = displayTime('+0');
 			$('#tGhana').html(ghana_time);
+			var ph_time = displayTime('+8');
+			$('#ph_time').html(ph_time);
 		</script>
 	</body>
 </html>
